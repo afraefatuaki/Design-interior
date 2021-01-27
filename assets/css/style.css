@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;500&family=Work+Sans:wght@200;300&display=swap');
 /* font-family: 'Lora', serif;
 font-family: 'Work Sans', sans-serif; */
 
@@ -6,6 +6,7 @@ body{
     margin:0px;
     padding:0px;
     font-family: 'Work Sans', sans-serif;
+    transform: uppercase;
 }
 
 .light{
@@ -25,7 +26,7 @@ body{
 }
 h1{
     font-family: 'Lora', serif;
-    font-size: 3.2em;
+    font-size: 3em;
 }
 
 p{
@@ -50,18 +51,19 @@ header article{
 header p{
     font-family: 'Lora', serif;
     font-size: 1.5em;
-    word-spacing: 15px;
+    word-spacing: 10px;
     letter-spacing: 7px;
     transform: uppercase;
 
 }
 header h1{
-    font-size: 8em;
+    font-size: 7em;
+    word-spacing: 25px;
 }
 
 header img{
     flex: 1 0 50%;
-    height: 100vh;
+    height: 75vh;
 }
 
 /*================================================================
@@ -70,6 +72,11 @@ header img{
 
 ================================================================*/
 /*-- Nav & Logo --*/
+/*-----Burger-----*/
+#burger{
+    display: none;
+}
+/*-----Burger-----*/
 
 main{
     background-color: #2e2e2e;
@@ -78,12 +85,10 @@ main > div {
     position: relative;
     position: sticky;
     top: 0%;
-   
-    
 }
 
 main > div img{
-    padding: 20px 0;
+    padding: 20px 20px;
 }
 
 .nav li{
@@ -108,13 +113,14 @@ main ul a{
 
 #ourStory{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 #ourStory div{
-    line-height: 50px;
-   
+    line-height: 40px;
+   width: 40%;
+   margin-right: 5%;
 }
 #ourStory h1{
     text-align: center;
@@ -122,6 +128,7 @@ main ul a{
 
 #ourStory img{
     padding: 10% 0;
+    width: 50%;
 }
 
 /*-- Section 2 --*/
@@ -160,11 +167,11 @@ figcaption{
 
 .newsletter article{
   
-    padding: 10% 0;
+    padding: 12% 0;
     line-height: 50px;
 }
 form{
-    padding: 10% 0;
+    padding: 11% 0;
 }
 label{
     color: white;
@@ -174,8 +181,7 @@ input{
     padding: 10px 200px;
 }
 textarea{
-    width: 50%;
-    padding: 15px 134px;
+    padding: 15px 180px;
 }
 
 .copyright{
@@ -193,7 +199,103 @@ textarea{
     display: inline;
     color: white;
     font-size: 1.3em;
-    padding-left: 100px;
+    padding-left: 50px;
+}
+
+button{
+    padding: 10px 20px;
+
+}
+/*==============================================================================================================================================
+
+                                                                       Media Queries
+
+==============================================================================================================================================*/
+
+@media (max-width: 768px){
+    .light{
+        background-color: pink;
+    }
+    h1{
+        font-size: 1.5em;
+    }
+    p{
+        font-size: 1em;
+        font-weight: 200;
+        line-height: 30px;
+    }
+    header{
+        display: block;
+    }
+    header article h1{
+        padding: 70px 0 0px 0;
+        margin: 0px;
+        font-size: 3em;
+    }
+    header p{
+        padding-bottom: 10%;
+        font-size: 1em;
+    }
+    header img{
+        height: 71vh;
+        padding-bottom: 0px;
+    }
+    /*--------------Burger--------------*/
+    .nav{
+        display: none
+    }
+    .burger{
+        display: block
+    }
+    main > div{
+        display: absolute;
+        top: 0px;
+    }
+
+    #ourStory{
+        display: block;
+    }
+
+    #ourStory img{
+        height:50vh;
+        width: 70vw;
+        margin-left: 14%;
+        padding-bottom: 0px;
+        padding-top: 15%;
+    }
+
+    #ourStory div{
+        text-align: center;
+        line-height: normal;
+        width: 75%;
+        margin: 0 200px 0 13%;
+        padding: 30px 0 10% 0;
+    }
+    .FEATURED{
+        display: block;
+    }
+    figure{
+        padding: 5% 0;
+    }
+    .newsletter{
+        display: block;
+        margin-left: 14%;
+    }
+    .copyright{
+        display: block;
+    }
+    
+        
+    footer ul{
+        padding-top: 5%;
+        text-align: center;
+    }
+    footer li{
+        padding-left: 200px;
+        font-size: 10px;
+        font-size: 15px;
+        color: red;
+    }
 }
 
 

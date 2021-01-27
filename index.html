@@ -10,6 +10,7 @@
 
 <body>
     <!-- ========== START HEADER ========== -->
+
     <header class="light">
 
         <article>
@@ -38,6 +39,24 @@
 
             </ul>
             <!-- End NAV & Logo-->
+
+            <!-- Start Burger-->
+            <div id="burger">
+                <input type="checkbox" class="box" />
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <div class="menu">
+                    <ul>
+                        <li>H & H</li>
+                        <li>OUR STORY</li>
+                        <li>DESIGNS</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Start Burger-->
 
         </div>
 
@@ -90,51 +109,56 @@
                 </figure>
 
             </div>
-            <iframe width="600" height="350" src="https://www.youtube.com/watch?v=GI71fXmRrLM&feature=youtu.be">
-            </iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GI71fXmRrLM" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
 
         </section>
         <!-- End Section 02-->
-
-        <!-- Start Footer-->
-        <footer class="dark">
-
-            <div class="newsletter">
-
-                <article>
-
-                    <h1>GET IN TOUCH </h1>
-                    <p>We would love to hear from you! <br><br>If you would like to receive our monthly catalogue
-                        <br>subscribe by
-                        filling in the form with your name and <br>email address.
-                    </p>
-
-                </article>
-                <form action="">
-                    <label for="name">Name</label><br>
-                    <input type="text" id="name" name="name" value=""><br><br>
-                    <label for="email">Email</label><br>
-                    <input type="email" id="email" name="email" value=""><br><br>
-                    <label for="text">Message</label><br>
-                    <textarea name="comment" form="usrform">Optional</textarea><br><br>
-                    <input type="submit" value="Submit">
-                </form>
-
-            </div>
-            <div class="copyright">
-                <h1>COPYRIGHT 2019</h1>
-                <h1>CREATED WITH LOVE</h1>
-                <ul>
-                    <li>PRIVACY</li>
-                    <Li>TERMS</Li>
-                    <li>CONTACT</li>
-                </ul>
-            </div>
-
-        </footer>
-
-
     </main>
+
+    <!-- Start Footer-->
+    <footer class="dark">
+
+        <div class="newsletter">
+
+            <article>
+
+                <h1>GET IN TOUCH </h1>
+                <p>We would love to hear from you! <br><br>If you would like to receive our monthly catalogue
+                    <br>subscribe by
+                    filling in the form with your name and <br>email address.
+                </p>
+
+            </article>
+            <form action="">
+                <label for="name">Name</label><br>
+                <input type="text" id="names" name="name" value="" placeholder="Enter your name"><br><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="emails" name="email" value="" placeholder="enter your email"><br><br>
+                <label for="text">Message</label><br>
+                <textarea name="comment" form="usrform">Optional</textarea><br><br>
+                <button type="button" onclick="newsletter()">Submit</button>
+            </form>
+
+        </div>
+        <div class="copyright">
+            <h1>COPYRIGHT 2019</h1>
+            <h1>CREATED WITH LOVE</h1>
+
+            <ul>
+                <li>PRIVACY</li>
+                <Li>TERMS</Li>
+                <li>CONTACT</li>
+            </ul>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="assets/js/main.js"></script>
 
 </body>
 
