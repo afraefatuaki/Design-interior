@@ -23,13 +23,13 @@
     <!-- ========== END HEADER ========== -->
 
     <!-- ========== START MAIN ========== -->
-    <main>
+    <main class="content">
 
         <div class="dark">
 
             <!-- Start NAV & Logo-->
             <img src="assets/img/logo.png" alt="logo" />
-            <ul>
+            <ul class="nav">
 
                 <li><a href="#">H&H</a></li>
                 <li><a href="#">OUR STORY</a></li>
@@ -60,31 +60,37 @@
         <!-- End Section 01-->
 
         <!-- Start Section 02-->
-        <section class="light">
+        <section class="light" id="FEATURED">
 
-            <div class="FEATURED">
+            <div>
 
                 <h1>FEATURED </h1>
                 <p>Take a look at some of our featured picks that have made editorial debuts</p>
 
             </div>
-            <div>
+            <div class="FEATURED">
 
                 <figure>
+
                     <img src="assets/img/features1.jpg" alt="">
                     <figcaption>Image by Michal Jarmoluk from Pixabay.</figcaption>
+
                 </figure>
                 <figure>
+
                     <img src="assets/img/features2.jpg" alt="">
                     <figcaption>Image by StockSnap from Pixabay.</figcaption>
+
                 </figure>
                 <figure>
+
                     <img src="assets/img/features3.jpg" alt="">
                     <figcaption>Image by miapirttila from Pixabay.</figcaption>
+
                 </figure>
 
             </div>
-            <iframe width="420" height="345" src="https://www.youtube.com/watch?v=GI71fXmRrLM&feature=youtu.be">
+            <iframe width="600" height="350" src="https://www.youtube.com/watch?v=GI71fXmRrLM&feature=youtu.be">
             </iframe>
 
         </section>
@@ -93,21 +99,24 @@
         <!-- Start Footer-->
         <footer class="dark">
 
-            <div>
+            <div class="newsletter">
 
                 <article>
 
                     <h1>GET IN TOUCH </h1>
-                    <p>We would love to hear from you! If you would like to receive our monthly catalogue subscribe by
-                        filling in the form with your name and email address
+                    <p>We would love to hear from you! <br><br>If you would like to receive our monthly catalogue
+                        <br>subscribe by
+                        filling in the form with your name and <br>email address.
                     </p>
 
                 </article>
                 <form action="">
-                    <label for="name">Name</label>
+                    <label for="name">Name</label><br>
                     <input type="text" id="name" name="name" value=""><br><br>
-                    <label for="email">Email</label>
+                    <label for="email">Email</label><br>
                     <input type="email" id="email" name="email" value=""><br><br>
+                    <label for="text">Message</label><br>
+                    <textarea name="comment" form="usrform">Optional</textarea><br><br>
                     <input type="submit" value="Submit">
                 </form>
 
@@ -116,7 +125,6 @@
                 <h1>COPYRIGHT 2019</h1>
                 <h1>CREATED WITH LOVE</h1>
                 <ul>
-
                     <li>PRIVACY</li>
                     <Li>TERMS</Li>
                     <li>CONTACT</li>
