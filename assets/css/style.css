@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Work+Sans&display=swap');
+/* font-family: 'Lora', serif;
+font-family: 'Work Sans', sans-serif; */
+
+body{
+    margin:0px;
+    padding:0px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.light{
+    background-color: white;
+}
+
+.light h1, .light p{
+    color:black;
+}
+
+.dark{
+    background-color: #2e2e2e;
+}
+
+.dark h1, .dark p{
+    color:white;
+}
+h1{
+    font-family: 'Lora', serif;
+    font-size: 3.2em;
+}
+
+p{
+    font-size: 1.5em;
+}
+/*================================================================
+
+            HEADER
+
+================================================================*/
+
+header{
+    display: flex;
+    align-items: center;
+}
+
+header article{
+    flex: 1 0 50%;
+    text-align: center;
+    
+}
+header p{
+    font-family: 'Lora', serif;
+    font-size: 1.5em;
+    word-spacing: 15px;
+    letter-spacing: 7px;
+    transform: uppercase;
+
+}
+header h1{
+    font-size: 8em;
+}
+
+header img{
+    flex: 1 0 50%;
+    height: 100vh;
+}
+
+/*================================================================
+
+            MAIN
+
+================================================================*/
+/*-- Nav & Logo --*/
+
+main{
+    background-color: #2e2e2e;
+}
+main > div {
+    position: relative;
+    position: sticky;
+    top: 0%;
+   
+    
+}
+
+main > div img{
+    padding: 20px 0;
+}
+
+ main ul li{
+    display: inline;
+    list-style: none;
+    padding-left: 200px;
+} 
+
+main ul{
+   position: absolute;
+   top: 25px;
+   left: 25%;
+}
+
+main ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+/*-- Section 1 --*/
+
+#ourStory{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#ourStory div{
+    flex: 1 0 50%;
+    line-height: 50px;
+   
+}
+
+#ourStory h1{
+    text-align: center;
+}
+
+#ourStory img{
+    flex: 1 0 50%;
+    padding: 10% 0;
+}
